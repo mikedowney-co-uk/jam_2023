@@ -1,6 +1,6 @@
 # Butterfly LEDs
 
-![LED Butterfly](/Users/mike.downey/Documents/Python/jam_2023/butterfly/butterfly.jpg)
+![LED Butterfly](butterfly.jpg)
 
 ## Wiring Up
 
