@@ -15,3 +15,7 @@ A Pi2 based 2D spectrum analyzer, using a microcontroller for analogue input and
 ![Pi2 Spectrum Analyzer](spectrum/spectrum_analyser.jpg)
 
 ## Geiger Counter plotter
+
+Raspberry Pi based Geiger counter display.
+
+![Geiger Counter Screen](geiger/geiger.jpg)
