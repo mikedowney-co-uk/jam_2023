@@ -1,6 +1,6 @@
 # Pi based Spectrum Analyzer
 
-Uses `scipy` to perform an FFT on a sampled waveform and displays the result on an 8x8 LED matrix.
+Displays a 3D audio spectrum on an 8x8 LED matrix display.
 
 ## Description of the system
 
@@ -20,9 +20,12 @@ From top to bottom:
 
 ## The Code
 
-Unfortunately I don't have the microcontroller code available but what it does is:
+The microcontroller code is written for a PIC 16F18344 but should be easy to adapt for a similar
+chip. It is very straightforward and shouldn't be too hard to re-write to run on something else,
+such as a member of the Arduino family or even a raspberry pi pico. The main thing to be aware of is
+that the Pi should only have 3.3V applied to a GPIO pin.
 * Reads the ADC and sends the value to the serial port
 * Reads the potentiometer and pauses according to the value (so changing the potentiometer adjusts the sample rate)
 
-The python code reads in a block of values, performs an FFT and uses the results to
-set the colours and intensities of the LED matrix. 
+The Raspberry Pi code is written in python and reads in a block of values, performs an FFT
+(using the `scipy` library) and uses the results to set the colours and intensities of the LED matrix. 
